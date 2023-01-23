@@ -75,6 +75,8 @@ surfaceForces
         surfaceTensionForceModel fitParaboloid;
     <!--(elif solver=="interFlow-RDF")-->
         surfaceTensionForceModel RDF;
+    <!--(elif solver=="interFlow-dv")-->
+        surfaceTensionForceModel divNormal;
     <!--(end)-->
         
     accelerationModel gravity;
