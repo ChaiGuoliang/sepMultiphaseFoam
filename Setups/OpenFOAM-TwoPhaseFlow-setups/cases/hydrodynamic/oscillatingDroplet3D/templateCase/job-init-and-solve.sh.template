@@ -15,4 +15,4 @@ decomposePar
 # Avaialable parameters are:
 # - |-N_CORES_TOTAL-|
 # - |-MEMORY_PER_CORE-|
-mpirun -n |-N_CORES_TOTAL-| |-solver-| -parallel
+sbatch -n |-N_CORES_TOTAL-| --mem-per-cpu=|-MEMORY_PER_CORE-| ../interFlow.sbatch

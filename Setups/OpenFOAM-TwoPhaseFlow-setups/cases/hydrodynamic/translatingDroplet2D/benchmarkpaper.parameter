@@ -16,7 +16,7 @@ values
         water-air oil_novec7500-water gearoil-air
     );
 
-    solver ( interFlow-dN );
+    solver ( interFlow-dN interFlow-RDF interFlow-fP );
     //solver ( interFoam interIsoFoam interFlow-fP interFlow-RDF );
 
     // Job script related parameters

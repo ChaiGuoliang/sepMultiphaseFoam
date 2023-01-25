@@ -17,7 +17,7 @@ FoamFile
 
 field           alpha.dispersed;
 type            sphere;
-radius          0.001;
+radius          0.004;
 origin          (0.005 0.005 0.005);
 
 // ************************************************************************* //

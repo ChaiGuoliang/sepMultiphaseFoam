@@ -17,7 +17,7 @@ FoamFile
 
 field           alpha.dispersed;
 type            cylinder;
-radius          0.001;
+radius          0.004;
 direction       (0 0 1);
 origin          (0.005 0.005 0.0);
 
