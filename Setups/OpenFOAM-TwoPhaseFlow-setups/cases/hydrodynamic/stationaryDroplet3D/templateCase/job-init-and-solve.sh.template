@@ -16,7 +16,7 @@ decomposePar
 # - |-N_CORES_TOTAL-|
 # - |-MEMORY_PER_CORE-|
 <!--(if "interFlow" in solver)-->
-mpirun -n |-N_CORES_TOTAL-| interFlow -parallel
+sbatch -n |-N_CORES_TOTAL-| --mem-per-cpu=|-MEMORY_PER_CORE-| ../interFlow.sbatch
 <!--(else)-->
 mpirun -n |-N_CORES_TOTAL-| |-solver-| -parallel
 <!--(end)-->

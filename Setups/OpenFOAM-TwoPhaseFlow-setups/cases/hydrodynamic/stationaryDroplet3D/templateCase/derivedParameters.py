@@ -11,7 +11,7 @@ def computeDeltaT(values):
     if "DELTA_T" in values:
         return values["DELTA_T"]
 
-    
+
     domainLength = values["DOMAIN_LENGTH"]
     resolution = values["RESOLUTION"]
     h = domainLength/resolution
@@ -32,7 +32,7 @@ def computeDeltaT(values):
         rho_ambient = rho_air
         rho_droplet = rho_water
         sigma = 72.74e-3
-    elif values["FLUID_PAIRING"] == "oil_novec7500-water": 
+    elif values["FLUID_PAIRING"] == "oil_novec7500-water":
         rho_ambient = rho_water
         rho_droplet = rho_oil_novec7500
         sigma = 49.5e-3
@@ -68,8 +68,8 @@ def compute_cores(values):
 
     res = values['RESOLUTION']
 
-    res_to_cores = {32 : 1,
-                    64 : 3,
+    res_to_cores = {32 : 2,
+                    64 : 4,
                     128 : 24}
 
     if res not in res_to_cores.keys():
